@@ -1,22 +1,27 @@
-# Egghead Starter App
+# GraphQL with Postgres
 
-This application serves as a starting point for lots of my Egghead courses because it's a simple implementation of many modern web technologies.
+This application is a starting point for creating a GraphQL server backed by Postgres. The frontend for a Todo app is already provided, but it will need
+to be re-written to use the Apollo client to interact with GraphQL.
 
-# What's in the box?
+# Getting Started
 
-A modern full-stack framework intended to help you focus on the frontend part of learning to program:
-* Frontend:
-  * React (for UI)
-  * Redux (for state management)
-  * react-scripts (for all the build processes you don't want to worry about -- webpack, babel, etc)
-  * Redux Saga (for side-effect management)
-* Backend:
-  * json-server (Manages all the nitty gritty of an API for us)
-
-# Plus, all you have to do to get started is:
+1) [Install NPM](https://www.npmjs.com/get-npm)
+2) [Install Ruby](https://rvm.io/rvm/install)
+3) [Install Postgres](https://postgresapp.com/)
+4) Install dependencies
 
 ```bash
 npm install
 bundle install
-foreman start
 ```
+
+5) Create the database with the provided todos schema
+
+```bash
+bundle exec rake db:create db:migrate
+RAILS_ENV=test bundle exec rake db:migrate
+```
+
+# Now You're Ready to Follow Along
+
+The lesson on Egghead.io will teach you the rest!
