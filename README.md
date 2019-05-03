@@ -1,6 +1,8 @@
-# GraphQL with Postgres
+# Auto-generate A RESTful GraphQL API with Postgraphile
 
-This application is a starting point for creating a GraphQL server backed by Postgres. The frontend for a Todo app is already provided, but it will need
+Postgraphile automatically detects tables, columns, indexes, relationships, views, etc. - providing a GraphQL server that is highly intelligent about your data - while remaining extensible to your own resolvers and providing ample security options.
+
+This application provides a starting point for creating a GraphQL server backed by Postgraphile. The frontend for a Todo app is already provided, but it will need
 to be re-written to use the Apollo client to interact with GraphQL.
 
 # Getting Started
